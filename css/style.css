@@ -1,0 +1,132 @@
+:root {
+  --green: #4CAF50;
+  --silver: #E0E0E0;
+  --gold: #FFD700;
+  --blue: #007BFF;
+  --light-bg: #F9F9F9;
+  --text: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--light-bg);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: var(--green);
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+a.button,
+a.back {
+  display: inline-block;
+  background-color: var(--blue) !important;
+  color: #fff !important;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover,
+a.back:hover {
+  background-color: #0056b3 !important;
+  color: #fff !important;
+}
+
+
+footer {
+  background-color: var(--gold);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #000;
+}
+
+/* 🔷 CARD STYLES FOR HOMEPAGE */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+  justify-items: center;
+}
+
+.card {
+  background-color: white;
+  border-left: 5px solid var(--silver);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.card p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+/* Colored borders */
+.green-border { border-left-color: var(--green); }
+.blue-border { border-left-color: var(--blue); }
+.gold-border { border-left-color: var(--gold); }
+.silver-border { border-left-color: var(--silver); }
+
+/* Responsive nav */
+@media (max-width: 600px) {
+  nav a {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
